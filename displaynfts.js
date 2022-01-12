@@ -6,22 +6,6 @@ const appId = "msB9G7dAHJ05kSEm0rCbQxkIYG9T20E3kXJsbI8a";
 //   .then(res => res.json())
 //   .then(json => console.log(json))
 //   .catch(err => console.error('error:' + err));
-
-const api_url = 
-"https://api.opensea.io/api/v1/asset/0x495f947276749ce646f68ac8c248420045cb7b5e/13920260661940946805075895673459080738859946120609398873476202579976676966401/";
-var vo 
-// Defining async function
-async function getapi(url) {
-// Storing response
-const response = await fetch(url, {method: 'GET'});
-// Storing data in form of JSON
-
-var data = await response.json();
-vo = JSON.stringify(data)
-}
-getapi(api_url)
-//let vo = 
-console.log(vo)
 class NFT {
   constructor() {
     this.name;
